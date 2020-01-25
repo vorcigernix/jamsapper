@@ -3,10 +3,9 @@
   "description": "JAMStack Sapper",
   "version": "0.0.1",
   "scripts": {
-    "dev": "sapper dev",
-    "build":"sapper export",
-    "build-legacy": "sapper build --legacy",
-    "export": "sapper export --legacy",
+    "dev": "sapper dev --ext '.svelte .md'",
+    "build": "sapper build --ext '.svelte .md'",
+    "export": "sapper export --ext '.svelte .md'",
     "start": "node __sapper__/build",
     "cy:run": "cypress run",
     "cy:open": "cypress open",
@@ -32,6 +31,7 @@
     "rollup-plugin-svelte": "^5.0.1",
     "rollup-plugin-terser": "^5.2.0",
     "sapper": "^0.27.0",
-    "svelte": "^3.0.0"
+    "svelte": "^3.0.0",
+    "mdsvex": "^0.4.0"
   }
 }
