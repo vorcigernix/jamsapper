@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "sapper dev --ext '.svelte .md'",
     "build": "sapper build --ext '.svelte .md'",
-    "export": "sapper export  --ext '.svelte .md'",
+    "export": "sapper export  --basepath jamsapper --ext '.svelte .md'",
     "start": "node __sapper__/build",
     "cy:run": "cypress run",
     "cy:open": "cypress open",
