@@ -25,7 +25,7 @@ jobs:
     - name: Publish to Pages
       uses: alex-page/blazing-fast-gh-pages-deploy@v1.1.0
       with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        repo-token: c4f2200534d83f1170bd16c8fbdfb604a0d8888a
         site-directory: __sapper__/export
     env:
       CI: true
