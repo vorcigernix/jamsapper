@@ -22,10 +22,10 @@ jobs:
         npm ci
         npm run export --if-present
         # npm test
-    - name: Save production artifacts
-      uses: actions/upload-artifact@v1
+    - name: Publish to Pages
+      uses: alex-page/blazing-fast-gh-pages-deploy@v1.1.0
       with:
-        name: dist
-        path: __sapper__/export
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        site-directory: __sapper__/export
     env:
       CI: true
